@@ -1,0 +1,40 @@
+/*  ------------------------------------------------------------------------  */
+/*  Shvo buttons  */
+/*QPushButton.minimize,*/
+QPushButton.maximize,
+QPushButton.close {
+  height: 20px;
+  width: 20px;
+  padding: 1px 1px;
+}
+
+QPushButton.maximize[state = true] {
+  image: url(icon:/primary/normlz.svg);
+}
+QPushButton.maximize[state = false] {
+  image: url(icon:/primary/maxmz.svg);
+}
+
+QPushButton.close {
+  image: url(icon:/primary/tab_close.svg);
+}
+
+/*QPushButton.minimize:flat:hover,*/
+QPushButton.maximize:flat:hover,
+QPushButton.close:flat:hover {
+  background-color: rgba(220, 53, 69, 0.2);
+}
+
+/*QPushButton.minimize:flat:pressed,
+QPushButton.minimize:flat:checked,*/
+QPushButton.maximize:flat:pressed,
+QPushButton.maximize:flat:checked,
+QPushButton.close:flat:pressed,
+QPushButton.close:flat:checked {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+QFrame.without_border {
+  border: none;
+}
+
